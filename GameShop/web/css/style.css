@@ -1,0 +1,598 @@
+
+@font-face{
+    font-family: 'intobold';
+    src:url('../fonts/Intro-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'into';
+    src:url('../fonts/Intro-Book.ttf') format('TrueType');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+*{
+    font-family: 'intobold';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+
+}
+
+header div a{
+    color: #006262;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+header div p{
+    margin-left: 5px;
+    margin-top: -10px;
+    color: #006262;
+    font-size: 10px;
+    font-weight: lighter;
+
+}
+
+header div a strong{
+    font-size: 50px;
+    color: #8E4700;
+
+}
+
+header nav ul{
+    flex-wrap: wrap;
+    color: #006262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 2s;
+    font-size: 14px;
+}
+
+header nav ul li:hover{
+    cursor: pointer;
+    color: #8E4700;
+}
+
+header nav ul li button{
+    border: none;
+    background: #006262;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+header nav ul li button:hover a{
+    border: 2px solid #006262;
+    background: none;
+    color: #006262;
+}
+
+
+section{
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
+    height: 80vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section .produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    width: 120px;
+    height: 190px;
+    gap: 10px;
+
+}
+
+section .produto a .jogo-info{
+    z-index: 99999;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+
+
+}
+
+
+
+section .produto a h1{
+    margin: 5px;
+    text-align: center;
+    z-index: 99999;
+    color: #006262;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'into';
+}
+section .produto a h4{
+    margin: 3px;
+    text-align: center;
+    margin-top: -5px;
+    z-index: 99999;
+    color: #8E4700;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: 'into';
+}
+
+section .produto a .img-jogo{
+
+    width: 100%;
+    height: 150px;
+
+}
+
+section .produto a .img-jogo img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+footer{
+    font-size: 10px;
+    color: #006262;
+}
+
+/* MINHA CONTA */
+
+section article{
+    font-weight: lighter;
+    font-family: 'into';
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 30px;
+    background: #006262;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+section ul{
+    padding: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+section article span:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 30px;
+    width: 200px;
+    background: #8E4700;
+    cursor: pointer;
+}
+
+/* LOGIN */
+.container-form{
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
+    height: 80vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+
+.container-form  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    color: #006262;
+    font-size: 12px;
+}
+
+.container-form  form:nth-of-type(2){
+    background: #006262;
+}
+
+.container-form  form:nth-of-type(2) label{
+    color: white;
+}
+
+
+
+.container-form  form input{
+    width: 300px;
+    height: 30px; 
+    padding: 10px;
+    border: 2px solid #006262;
+    border-radius: 5px;
+    margin: 8px;
+}
+
+.container-form  form button{
+    width: 300px;
+    height: 30px; 
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    background: #006262;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 2s;
+}
+
+.container-form  form p{
+    font-size: 10px;
+    margin: 5px;
+    color: #8E4700;
+    cursor: pointer;
+}
+.container-form  textarea{
+    width: 450px;
+    height: 200px;
+    border: 3px solid #006262;
+    background: none;
+    outline: none;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container-form  form button:hover{
+    background: #8E4700;
+    cursor: pointer;
+}
+
+.container-form .Cadastro{
+    display: none;
+}
+
+/*------------------------------------------*/
+
+/* Janela modal upload*/
+
+
+
+.janela-modal{
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.janela-modal.abrir{
+    display: flex;
+}
+
+@keyframes abrirmodal{
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+.modal2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 450px;
+    width: 40%;
+    min-height: 200px;
+    background-color: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.fechar{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    transition: all 0.30s ease-out;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: intobold;
+    font-weight: 6000;
+    background: #006262;
+
+}
+
+.fechar:hover{
+    height: 50px;
+    width: 50px;
+}
+
+.abrir .modal2{
+    animation: abrirmodal .3s;
+}
+
+.telaupload {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+.telaupload .separate input{
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.telaupload  textArea{
+    padding: 10px;
+    border-radius: 10px;
+    height: 100px;
+    border: none;
+    margin: 0;
+    width: 90%;
+    height: 100px;
+    font-size: 16px;
+
+}
+
+.modal2 label{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.telaupload .separate{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 90%;
+    padding: 5px;
+    margin: 20px;
+}
+
+.telaupload .separate  select{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.telaupload button{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    width: 50%;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+
+    color: white;
+    background: #006262; 
+    font-weight: bolder;  
+    transition: all 0.30s ease-out;
+}
+
+
+.telaupload button:hover{
+    background: #8E4700; 
+    cursor: pointer;
+
+}
+
+/*-------------------------------------------*/
+
+.table-c{
+    width: 1000px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+} 
+
+.table-c table{
+    position: relative;
+    width: 940px;
+    max-height: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 5px;;
+    overflow: hidden;
+}
+
+.table-c table th, td{
+    width: 300px;
+    height: 25px;
+    font-size: 12px;
+    color: #006262;
+    padding: 10px;
+}
+
+.table-c table th{
+    max-height: 15px;
+    color: white;
+    background: #006262; 
+    font-size: 12px;
+
+}
+.table-c table td{
+    max-height: 15px;
+}  
+
+.table-c table td a{
+    color: #8E4700;
+}
+
+.table-c .msg{
+    background: #006262;
+    width: 300px;
+    height: 550px;
+}
+
+ .msg{
+    
+     position: absolute;
+     top: 120px;
+     left: 10px;
+    background: #006262;
+    width: 200px;
+    height: 550px;
+}
+
+.msg .item-msg{
+    padding: 5px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        color: white;
+        border-bottom:  1px solid white;
+    width: 200px;
+    height: 100px;
+}
+
+.msg .item-msg h1{
+    
+    font-size: 14px;
+}
+
+.msg .item-msg span{
+    color: #F0F0F0;
+     font-size: 10px;
+}
+
+.msg .item-msg p{
+    padding: 5px;
+    background: #004A4A;
+    width: 200px;
+    height: 90px;
+  color: #F0F0F0;
+     font-size: 10px;
+}
+
+section .artigo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .artigo .img-artigo{
+ 
+    width: 300px;
+    height: 300px;
+}
+section .artigo .img-artigo img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+section .artigo .info-artigo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+section .artigo .info-artigo h1{
+    
+    color: #006262;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+section .artigo .info-artigo h2{
+    color: black;
+    font-weight: lighter;
+    font-size: 12px;
+}
